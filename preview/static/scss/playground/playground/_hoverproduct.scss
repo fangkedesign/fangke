@@ -1,0 +1,64 @@
+.hoverproduct-wrap {
+    width: 600px;
+    margin: 0 auto;
+}
+.hoverproduct-wrap .gallery-box {
+	width: 800px;
+	height: 1000px;
+	overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+#colorway {
+    margin-top: 2rem;
+	display: flex;
+    .color-box {
+        display: inline;
+        cursor: pointer;
+        margin: 5px;
+        img {
+            min-width: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #c7c7c7;
+            padding: 3px;
+        }
+    }
+}
+
+
+// Colors
+$primary: #f45a38;
+$primary-ultralight: mix(white, $primary, 80%);
+$primary-light: mix(white, $primary, 25%);
+$primary-dark: mix(black, $primary, 25%);
+$primary-ultradark: mix(black, $primary, 80%);
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    $size: 12px;
+    width: $size;
+    height: $size;
+    background-color: $primary;
+}
+
+.cursor-dot-outline {
+    $size: 40px;
+    width: $size;
+    height: $size;
+    background-color: rgba($primary-light, 0.5);
+}

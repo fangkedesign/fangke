@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* --------------------------------
+About
+-------------------------------- */
+.about-text {
+    position: relative;
+	z-index: 9;
+    width: 50%;
+	
+    font-family: serif;
+    font-size: 26px;
+	line-height: 1.5;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 30vh;
+
+}
+/* --------------------------------
+  Portfolio
+-------------------------------- */
+.portfolio-list {
+	margin-top: 30vh;
+}
+.portfolio-block{
+	display: flex;
+	.portfolio-header {
+		z-index: -1;
+		width: 50vw;
+		margin: 20vh 0;
+		text-align: center;
+		font-size: 2vw;
+		h1 {
+			margin-bottom: 0;
+			font-family: 'BeatriceDisplay-LightIt';
+		}
+	}
+	.portfolio-tag-list {
+		li {
+			display: inline;
+			padding: 10px 20px;
+			font-size: 24px;
+			border-radius: 30px;
+			border: 1px solid #9e8b8b;
+		}
+	}
+	.portfolio-images {
+		width: 50vw;
+		img {
+			width: 100%;
+			z-index:2
+		}
+	}
+}

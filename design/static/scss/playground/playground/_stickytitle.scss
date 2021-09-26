@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* --------------------------------
+Sticky Title
+-------------------------------- */
+.sticky-wrap {
+	position: relative;
+}
+.sticky-title {
+	position: sticky;
+	top: calc( 110px + 1em);
+	height: 20%;
+}
+
+.sticky-container {
+    margin: 0 auto;
+}

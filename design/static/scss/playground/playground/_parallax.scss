@@ -1,0 +1,43 @@
+.parallax-wrap {
+    // height: 100vh;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    // perspective: 5px; // parallax的互動關鍵
+}
+.parallax-title {
+    padding: 5rem;
+	font-size: 4rem;
+	color: #000;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    h5 {
+        max-width: 500px;
+    }
+}
+.parallax-banner {
+	position: relative;
+	height: 50vh;
+	display: flex;
+	flex: 1 0 auto;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	transform: translateZ(-1px) scale(2);
+}
+
+.parallax-content {
+    position: relative;
+	display: block;
+	background-color: white;
+	z-index: 1;
+	font-size: 2rem;
+	padding: 5rem;
+}
+.parallax-window {
+    min-height: 100vh;
+    background: transparent;
+}
