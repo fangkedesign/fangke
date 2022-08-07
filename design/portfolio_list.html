@@ -1,0 +1,63 @@
+{% extends "_base.html" %} {% block body %}
+
+
+<div class="main-content-wrap row justfy-content-center" >
+	<div class="back-to-home">
+		<a href="../design/index.html">Back <img class="arrow-back" src="static/images/svg/btn-arrow-left.svg" alt=""> </a>
+	</div>
+	<div class="container">
+		<!-- portfolio list start -->
+
+		<ul class="portfolio-list row justfy-content-center">
+			<li class="col-12 col-sm-6 tilt" data-tilt >
+				<a href="portfolio_detail_quoh.html">
+					<h3 class="title">
+						QUOH 
+					</h3>
+					<img src="static/images/seleted_works/quoh.jpg" alt="" class="img-fluid ">
+				</a>
+			</li>
+			<li class="col-12 col-sm-6 tilt" data-tilt >
+				<a href="portfolio_detail_nagata.html">
+					<h3 class="title">
+						NagataLab 
+					</h3>
+					<img src="static/images/seleted_works/nagata.jpg" alt="" class="img-fluid">
+
+				</a>
+			</li>
+
+			<li class="col-12 col-sm-6 tilt" data-tilt >
+				<a href="portfolio_detail_mongo.html">
+					<h3 class="title">
+						Mongo
+					</h3>
+					<video class="lazy" id="promoVideo" autoplay loop muted playsinline onclick="pauseVid()">
+						<!-- <source src="video.webm" type="video/webm"> -->
+						<source data-src="static/images/seleted_works/mongo.mp4" type="video/mp4">
+						<!-- <img src="animated.gif"> -->
+					</video>
+				</a>
+			</li>
+			<!-- <li class="col-12 col-sm-6">
+				<a href="portfolio_detail_Handyage.html">
+					<h3 class="title">
+						 HandyAge
+					</h3>
+					<img src="static/images/seleted_works/handyage.jpg" alt="" class="img-fluid">
+
+				</a>
+			</li> -->
+		</ul>
+		<!-- portfolio list end -->
+
+	</div>
+</div>
+
+
+
+
+<script>
+
+</script>
+{% endblock %}

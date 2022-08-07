@@ -8,10 +8,19 @@ Sticky Title
 }
 .sticky-title {
 	position: sticky;
-	top: calc( 110px + 1em);
-	height: 20%;
+	top: 0;
+	height: 100vh;
+	@include media-breakpoint-down(sm) {
+		position: relative;
+		height: auto;
+	}
 }
 
 .sticky-container {
     margin: 0 auto;
+}
+
+.portfolio-header-content  {
+	height: 100%;
+	align-items: center;
 }

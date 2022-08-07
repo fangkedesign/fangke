@@ -21,6 +21,24 @@ class __TwigTemplate_9017598d1c30622b9443c6c8910cc1d15244960b337a788bff0b3387ea0
 \t<img src=\"static/images/sunflower.svg\" alt=\"\">
 </div>
 
+
+<footer class=\"in-view js_fade-in\" data-background=\"#f56b4a\">
+  
+\t<div class=\"footer-container flex-column flex-md-row\">
+\t\t<div class=\"footer-icon col-12 col-md-4 justify-content-center mb-3\">
+\t\t\t<img src=\"static/images/footer_icon.png\" alt=\"\">
+\t\t</div>
+
+    <div class=\"col-12 col-md d-flex flex-column justify-content-center\">
+      <h1 class=\"title\">
+        Let's Make It Interesting 
+      </h1>
+      <a class=\"email\" href=\"mailto:hsiehfangke@gmail.com\">hsiehfangke@gmail.com</a>
+    </div>
+\t</div>
+</footer>
+
+
 <!-- <div class=\"tickerwrapper\">
    <ul class='list'>
       <li class='listitem' style='font-size: 40px'>
@@ -35,21 +53,7 @@ class __TwigTemplate_9017598d1c30622b9443c6c8910cc1d15244960b337a788bff0b3387ea0
         <span>Let's Talk More Here</span>
       </li>
   </ul>
-</div> -->
-
-<footer class=\"in-view js_fade-in\" data-background=\"#f56b4a\">
-\t<div class=\"footer-container\">
-\t\t<div class=\"footer-icon\">
-\t\t\t<img src=\"static/images/footer_icon.png\" alt=\"\">
-\t\t</div>
-\t\t<div>
-\t\t\t<h1 class=\"title\">
-\t\t\t\tLet's Make It Interesting 
-\t\t\t</h1>
-\t\t\t<a href=\"mailto:hsiehfangke@gmail.com\">hsiehfangke@gmail.com</a>
-\t\t</div>
-\t</div>
-</footer>";
+</div> -->";
     }
 
     public function getTemplateName()
@@ -59,6 +63,6 @@ class __TwigTemplate_9017598d1c30622b9443c6c8910cc1d15244960b337a788bff0b3387ea0
 
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  19 => 1,  151 => 62,  148 => 61,  142 => 44,  137 => 9,  132 => 8,  126 => 7,  112 => 66,  110 => 61,  96 => 49,  94 => 48,  91 => 47,  89 => 46,  86 => 45,  84 => 44,  80 => 42,  78 => 41,  73 => 38,  71 => 37,  40 => 9,  36 => 8,  32 => 7,  24 => 1,  31 => 2,  28 => 1,);
     }
 }

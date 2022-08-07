@@ -15,18 +15,17 @@
 	<!-- Form -->
 	<!-- Core -->
 	<link rel="stylesheet" href="static/svg/icomoon/style.css">
-	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="static/css/style.css">
 	
 	<!-- Core -->
-	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="static/js/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-	<script src="static/js/bootstrap/bootstrap.min.js"></script>
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/zingtouch/1.0.6/zingtouch.min.js"></script>
 	<script src="http://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
 	
@@ -126,7 +125,13 @@
 				<a href="info.html">Info</a>
 		</div> -->
 		<div class="contact-info">
-				<a href="portfolio.html">Works</a>
+			<div class="link">
+				<a href="info.html">Info</a>
+
+			</div>
+		</div>
+		<div class="contact-info">
+				<a href="portfolio_list.html">Works</a>
 		</div>
 		<div class="contact-info">
 			<div class="link">
@@ -139,6 +144,10 @@
 
 
 </header>
+
+<!-- cursor -->
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
 		<main>
 			<div class="main-title">
 	<a href="index.html"><img src="static/images/logo.svg" alt=""></a>
@@ -147,22 +156,43 @@
 <!-- <div class="fangke-cht-text">
 	芳<br>格
 </div> -->
-<div class="about-text">
-<p>	我是芳格Kate，在台北地區專職專職網頁/UI設計、網頁前端切版的撰寫，過去四年職位為前端設計師。
-</p>
-<p></p>
-<p>喜歡新穎創新的風格，目前提供以下服務：(⁎⁍̴̛ᴗ⁍̴̛⁎)<br>
-    /// 網頁設計<br>
-    /// App UI設計<br>
-    /// Shopline電商改造設計<br>
-</p>
+<div class="info-wrap  js_fade-in">
+	<div class="row">
+		<div class="info-image col-md-6 col-12">
+			<img src="static/images/info/portrait.png" alt="">
+
+		</div>
+		<div class="info-text col-md-6 col-12">
+			<h2>
+				<br><br>
+				I'm a UI web designer who has strong frontend knowledge
+				and combines a logical thinking approach with a detailed aesthetic.</h2>
+
+			<img class="white-oval" src="static/images/info/oval.svg" alt="">
+		</div>
+	</div>
+	<div class="row info-trivia">
+		<h3>
+			Freelancer <span>Dec 2018 - Present</span>
+		</h3>
+		<p>・Collaborated with oversea product manager and developer to build custom app and website.<br>
+            ・Take part in multiple web UI design for local brand e-commerce.<br>
+			・Lead frontend e-commerce online designer at MUJI Taiwan branch</p>
+		<br><br>
+		<p>
+			I want to bring my experience in web development and my passion for finding creative solutions to help businesses excel and eventually assists in those businesses improving the quality of life and society.
+
+		</p>
+		<p>
+            Besides design, I also like walking around new places taking film photos.
+		</p>
+	</div>
 </div>
 
+<div id="instafeed"></div>
 
 
-<!-- cursor -->
-<!-- <div class="cursor-dot-outline"></div>
-<div class="cursor-dot"></div> -->
+
 
 <script>
 
@@ -172,6 +202,24 @@
 <div class="sunflower js_fade-in">
 	<img src="static/images/sunflower.svg" alt="">
 </div>
+
+
+<footer class="in-view js_fade-in" data-background="#f56b4a">
+  
+	<div class="footer-container flex-column flex-md-row">
+		<div class="footer-icon col-12 col-md-4 justify-content-center mb-3">
+			<img src="static/images/footer_icon.png" alt="">
+		</div>
+
+    <div class="col-12 col-md d-flex flex-column justify-content-center">
+      <h1 class="title">
+        Let's Make It Interesting 
+      </h1>
+      <a class="email" href="mailto:hsiehfangke@gmail.com">hsiehfangke@gmail.com</a>
+    </div>
+	</div>
+</footer>
+
 
 <!-- <div class="tickerwrapper">
    <ul class='list'>
@@ -188,29 +236,19 @@
       </li>
   </ul>
 </div> -->
-
-<footer class="in-view js_fade-in" data-background="#f56b4a">
-	<div class="footer-container">
-		<div class="footer-icon">
-			<img src="static/images/footer_icon.png" alt="">
-		</div>
-		<div>
-			<h1 class="title">
-				Let's Make It Interesting 
-			</h1>
-			<a href="mailto:hsiehfangke@gmail.com">hsiehfangke@gmail.com</a>
-		</div>
-	</div>
-</footer>
 			</div>
-
-
 	    
 	<!-- Jquery Plugins  -->
-	<script src="static/js/vendor.min.js"></script>
+
+	<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+	<script src="static/js/vendor.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"></script>
+	<script src="https://www.cssscript.com/demo/add-instagram-photos-to-your-website-using-instafeed-js/src/instafeed.js"></script>
 	<!-- Customized Script -->
 	<script src="static/js/main.js"></script>
+
+	
 		
 
 	
@@ -219,7 +257,7 @@
 		var lazyLoadInstance = new LazyLoad({
 			// Your custom settings go here
 		});
-
+		$('.tilt').tilt();
 		</script>
 </body>
 

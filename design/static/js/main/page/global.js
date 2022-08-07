@@ -1,6 +1,9 @@
 
+// global variable
+var mobileWidth = 991;
+
 /*----------------------------------------------------*/
-/* Global Function 
+/* Global Function
 /*----------------------------------------------------*/
 $(function () {
 	$(window).on('load', function () {
@@ -10,75 +13,22 @@ $(function () {
 /*----------------------------------------------------*/
 /* smooth scroll
 /*----------------------------------------------------*/
-
-
-
-/*
-	Index More Works Hover 
-*/
-
-var moreWorksImageContainer = $('.more-works-container');
-
-
-$(function () {
-
-	// TweenMax.staggerTo('.hover-image', 1, {
-	// 	opacity: 0,
-	// });
-	TweenMax.set("li.project-item", {perspective:200});
-	TweenLite.set(".hover-image", {transformStyle:"preserve-3d"});
-
-	$("li.project-item").hover(over, out);
-	function over(){
-		TweenMax.to($(this).find(".hover-image"), 0.3, { opacity: 1, delay:0.3, transformPerspective:500,  y:50})
-	}
-	
-	function out(){
-		TweenMax.to($(this).find(".hover-image"), 0.3, { opacity: 0,  overwrite:"all"})
-	}
-})
-
-
 /*----------------------------------------------------*/
-/* marquee 
+/* Header Scroll Hide
 /*----------------------------------------------------*/
-var $tickerWrapper = $(".tickerwrapper");
-var $list = $tickerWrapper.find("ul.list");
-var $clonedList = $list.clone();
-var listWidth = 10;
-
-$list.find("li").each(function (i) {
-            listWidth += $(this, i).outerWidth(true);
-});
-
-var endPos = $tickerWrapper.width() - listWidth;
-
-$list.add($clonedList).css({
-    "width" : listWidth + "px"
-});
-
-$clonedList.addClass("cloned").appendTo($tickerWrapper);
-
-//TimelineMax
-var infinite = new TimelineMax({repeat: -1, paused: true});
-var time = 40;
-
-infinite
-  .fromTo($list, time, {rotation:0.01,x:0}, {force3D:true, x: -listWidth, ease: Linear.easeNone}, 0)
-  .fromTo($clonedList, time, {rotation:0.01, x:listWidth}, {force3D:true, x:0, ease: Linear.easeNone}, 0)
-  .set($list, {force3D:true, rotation:0.01, x: listWidth})
-  .to($clonedList, time, {force3D:true, rotation:0.01, x: -listWidth, ease: Linear.easeNone}, time)
-  .to($list, time, {force3D:true, rotation:0.01, x: 0, ease: Linear.easeNone}, time)
-  .progress(1).progress(0)
-  .play();
-
-//Pause/Play        
-$tickerWrapper.on("mouseenter", function(){
-    infinite.pause();
-}).on("mouseleave", function(){
-    infinite.play();
-});
-
+const showAnim = gsap.from('header', { 
+	yPercent: -100,
+	paused: true,
+	duration: 0.4
+  }).progress(1);
+  
+  ScrollTrigger.create({
+	start: "top top",
+	end: 99999,
+	onUpdate: (self) => {
+	  self.direction === -1 ? showAnim.play() : showAnim.reverse()
+	}
+  });
 
 /*----------------------------------------------------*/
 /* Cursor
@@ -194,3 +144,42 @@ var cursor = {
 }
 
 cursor.init();
+
+
+
+
+
+
+/*----------------------------------------------------*/
+/* Cursor
+// source: https://github.com/verlok/vanilla-lazyload
+/*----------------------------------------------------*/
+
+var lazyLoadInstance = new LazyLoad({
+	// Your custom settings go here
+  });
+
+
+
+/*----------------------------------------------------*/
+/* Contents Fade-in
+/*----------------------------------------------------*/
+
+$(function() {
+    $(window).on('scroll load', function() {
+        $('.js_fade-in').each(function() {
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var deviceAdjust = 120;
+            if( $(window).width() < 767 ){
+                deviceAdjust = windowHeight / 10;
+            }
+            if (scroll > (elemPos - windowHeight + deviceAdjust)) {
+				$(this).addClass('js_scrollin');
+			}
+			
+        });
+    });
+});
+

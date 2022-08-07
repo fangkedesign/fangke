@@ -20,15 +20,15 @@
 3 - HELPERS 
 -------------------------------------------------- */
 @import "helpers/bootstrap_reset";
-@import "helpers/sweetalert.scss";
-@import "helpers/owl";
-@import "helpers/lightbox";
-@import "helpers/slider_pro";
-@import "helpers/revo_slider";
-@import "helpers/formatter.scss";
-@import "helpers/niceselect";
-@import "helpers/slinky.scss";
-@import "helpers/drilldown.scss";
+// @import "helpers/sweetalert.scss";
+// @import "helpers/owl";
+// @import "helpers/lightbox";
+// @import "helpers/slider_pro";
+// @import "helpers/revo_slider";
+// @import "helpers/formatter.scss";
+// @import "helpers/niceselect";
+// @import "helpers/slinky.scss";
+// @import "helpers/drilldown.scss";
 /* --------------------------------------------------
 4 - LAYOUT
 -------------------------------------------------- */
@@ -38,16 +38,9 @@
 /* --------------------------------------------------
 5 - PAGES
 -------------------------------------------------- */
-@import "pages/fluid";
-@import "pages/search";
 @import "pages/index";
-@import "pages/prod";
-@import "pages/member";
-@import "pages/checkout";
-@import "pages/article";
 @import "pages/about";
-@import "pages/contact";
-@import "pages/pages";
+@import "pages/portfolio";
 
 /* --------------------------------------------------
 6 - PLAY gound

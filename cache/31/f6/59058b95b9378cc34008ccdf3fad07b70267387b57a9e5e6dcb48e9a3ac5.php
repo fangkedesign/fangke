@@ -35,22 +35,43 @@ class __TwigTemplate_31f659058b95b9378cc34008ccdf3fad07b70267387b57a9e5e6dcb48e9
 <!-- <div class=\"fangke-cht-text\">
 \t芳<br>格
 </div> -->
-<div class=\"about-text\">
-<p>\t我是芳格Kate，在台北地區專職專職網頁/UI設計、網頁前端切版的撰寫，過去四年職位為前端設計師。
-</p>
-<p></p>
-<p>喜歡新穎創新的風格，目前提供以下服務：(⁎⁍̴̛ᴗ⁍̴̛⁎)<br>
-    /// 網頁設計<br>
-    /// App UI設計<br>
-    /// Shopline電商改造設計<br>
-</p>
+<div class=\"info-wrap  js_fade-in\">
+\t<div class=\"row\">
+\t\t<div class=\"info-image col-md-6 col-12\">
+\t\t\t<img src=\"static/images/info/portrait.png\" alt=\"\">
+
+\t\t</div>
+\t\t<div class=\"info-text col-md-6 col-12\">
+\t\t\t<h2>
+\t\t\t\t<br><br>
+\t\t\t\tI'm a UI web designer who has strong frontend knowledge
+\t\t\t\tand combines a logical thinking approach with a detailed aesthetic.</h2>
+
+\t\t\t<img class=\"white-oval\" src=\"static/images/info/oval.svg\" alt=\"\">
+\t\t</div>
+\t</div>
+\t<div class=\"row info-trivia\">
+\t\t<h3>
+\t\t\tFreelancer <span>Dec 2018 - Present</span>
+\t\t</h3>
+\t\t<p>・Collaborated with oversea product manager and developer to build custom app and website.<br>
+            ・Take part in multiple web UI design for local brand e-commerce.<br>
+\t\t\t・Lead frontend e-commerce online designer at MUJI Taiwan branch</p>
+\t\t<br><br>
+\t\t<p>
+\t\t\tI want to bring my experience in web development and my passion for finding creative solutions to help businesses excel and eventually assists in those businesses improving the quality of life and society.
+
+\t\t</p>
+\t\t<p>
+            Besides design, I also like walking around new places taking film photos.
+\t\t</p>
+\t</div>
 </div>
 
+<div id=\"instafeed\"></div>
 
 
-<!-- cursor -->
-<!-- <div class=\"cursor-dot-outline\"></div>
-<div class=\"cursor-dot\"></div> -->
+
 
 <script>
 

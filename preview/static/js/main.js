@@ -1,13 +1,9 @@
-/*----------------------------------------------------*/
-/*  main.js 
-/*----------------------------------------------------*/
 
 // global variable
-var mobileWidth = 767;
-
+var mobileWidth = 991;
 
 /*----------------------------------------------------*/
-/* Global Function 
+/* Global Function
 /*----------------------------------------------------*/
 $(function () {
 	$(window).on('load', function () {
@@ -17,75 +13,22 @@ $(function () {
 /*----------------------------------------------------*/
 /* smooth scroll
 /*----------------------------------------------------*/
-
-
-
-/*
-	Index More Works Hover 
-*/
-
-var moreWorksImageContainer = $('.more-works-container');
-
-
-$(function () {
-
-	// TweenMax.staggerTo('.hover-image', 1, {
-	// 	opacity: 0,
-	// });
-	TweenMax.set("li.project-item", {perspective:200});
-	TweenLite.set(".hover-image", {transformStyle:"preserve-3d"});
-
-	$("li.project-item").hover(over, out);
-	function over(){
-		TweenMax.to($(this).find(".hover-image"), 0.3, { opacity: 1, delay:0.3, transformPerspective:500,  y:50})
-	}
-	
-	function out(){
-		TweenMax.to($(this).find(".hover-image"), 0.3, { opacity: 0,  overwrite:"all"})
-	}
-})
-
-
 /*----------------------------------------------------*/
-/* marquee 
+/* Header Scroll Hide
 /*----------------------------------------------------*/
-var $tickerWrapper = $(".tickerwrapper");
-var $list = $tickerWrapper.find("ul.list");
-var $clonedList = $list.clone();
-var listWidth = 10;
-
-$list.find("li").each(function (i) {
-            listWidth += $(this, i).outerWidth(true);
-});
-
-var endPos = $tickerWrapper.width() - listWidth;
-
-$list.add($clonedList).css({
-    "width" : listWidth + "px"
-});
-
-$clonedList.addClass("cloned").appendTo($tickerWrapper);
-
-//TimelineMax
-var infinite = new TimelineMax({repeat: -1, paused: true});
-var time = 40;
-
-infinite
-  .fromTo($list, time, {rotation:0.01,x:0}, {force3D:true, x: -listWidth, ease: Linear.easeNone}, 0)
-  .fromTo($clonedList, time, {rotation:0.01, x:listWidth}, {force3D:true, x:0, ease: Linear.easeNone}, 0)
-  .set($list, {force3D:true, rotation:0.01, x: listWidth})
-  .to($clonedList, time, {force3D:true, rotation:0.01, x: -listWidth, ease: Linear.easeNone}, time)
-  .to($list, time, {force3D:true, rotation:0.01, x: 0, ease: Linear.easeNone}, time)
-  .progress(1).progress(0)
-  .play();
-
-//Pause/Play        
-$tickerWrapper.on("mouseenter", function(){
-    infinite.pause();
-}).on("mouseleave", function(){
-    infinite.play();
-});
-
+const showAnim = gsap.from('header', { 
+	yPercent: -100,
+	paused: true,
+	duration: 0.4
+  }).progress(1);
+  
+  ScrollTrigger.create({
+	start: "top top",
+	end: 99999,
+	onUpdate: (self) => {
+	  self.direction === -1 ? showAnim.play() : showAnim.reverse()
+	}
+  });
 
 /*----------------------------------------------------*/
 /* Cursor
@@ -205,82 +148,6 @@ cursor.init();
 
 
 
-/*----------------------------------------------------*/
-/* Cursor
-/*----------------------------------------------------*/
-
-! function (a) {
-	"function" == typeof define && define.amd ? define(["jquery"], a) : "object" == typeof exports ? module.exports = a(require("jquery")) : a(jQuery)
-}(function (a) {
-	function i() {
-		var b, c, d = {
-			height: f.innerHeight,
-			width: f.innerWidth
-		};
-		return d.height || (b = e.compatMode, (b || !a.support.boxModel) && (c = "CSS1Compat" === b ? g : e.body, d = {
-			height: c.clientHeight,
-			width: c.clientWidth
-		})), d
-	}
-
-	function j() {
-		return {
-			top: f.pageYOffset || g.scrollTop || e.body.scrollTop,
-			left: f.pageXOffset || g.scrollLeft || e.body.scrollLeft
-		}
-	}
-
-	function k() {
-		if (b.length) {
-			var e = 0,
-				f = a.map(b, function (a) {
-					var b = a.data.selector,
-						c = a.$element;
-					return b ? c.find(b) : c
-				});
-			for (c = c || i(), d = d || j(); e < b.length; e++)
-				if (a.contains(g, f[e][0])) {
-					var h = a(f[e]),
-						k = {
-							height: h[0].offsetHeight,
-							width: h[0].offsetWidth
-						},
-						l = h.offset(),
-						m = h.data("inview");
-					if (!d || !c) return;
-					l.top + k.height > d.top && l.top < d.top + c.height && l.left + k.width > d.left && l.left < d.left + c.width ? m || h.data("inview", !0).trigger("inview", [!0]) : m && h.data("inview", !1).trigger("inview", [!1])
-				}
-		}
-	}
-	var c, d, h, b = [],
-		e = document,
-		f = window,
-		g = e.documentElement;
-	a.event.special.inview = {
-		add: function (c) {
-			b.push({
-				data: c,
-				$element: a(this),
-				element: this
-			}), !h && b.length && (h = setInterval(k, 250))
-		},
-		remove: function (a) {
-			for (var c = 0; c < b.length; c++) {
-				var d = b[c];
-				if (d.element === this && d.data.guid === a.guid) {
-					b.splice(c, 1);
-					break
-				}
-			}
-			b.length || (clearInterval(h), h = null)
-		}
-	}, a(f).on("scroll resize scrollstop", function () {
-		c = d = null
-	}), !g.addEventListener && g.attachEvent && g.attachEvent("onfocusin", function () {
-		d = null
-	})
-});
-
 
 
 /*----------------------------------------------------*/
@@ -297,6 +164,7 @@ var lazyLoadInstance = new LazyLoad({
 /*----------------------------------------------------*/
 /* Contents Fade-in
 /*----------------------------------------------------*/
+
 $(function() {
     $(window).on('scroll load', function() {
         $('.js_fade-in').each(function() {
@@ -314,4 +182,116 @@ $(function() {
         });
     });
 });
+
+
+/*----------------------------------------------------*/
+/* Index More Works Hover 
+/*----------------------------------------------------*/
+$(document).ready(function () {
+	indexCaseHover();
+	$(window).on('resize', function () {
+		indexCaseHover();
+	});
+});
+
+var seletedWorks = $('.seleted-works');
+function indexCaseHover() {
+    if ($(window).outerWidth() <= mobileWidth) {
+		TweenMax.staggerTo('.work-thumb', 1, {
+			opacity: 1,
+		});	
+		$("li.case-title").kill();
+    } else {
+		// let text = document.querySelector("li.case-title");
+		// let hoverAnimation = gsap.to(".work-thumb",0.3,{
+		// 	opacity: 1,
+		// 	delay: 0.3,
+		// 	transformPerspective:500,
+		// 	y:50
+		// })
+		// text.addEventListener("mouseenter", () => hoverAnimation.play());
+		// text.addEventListener("mouseleave", () => hoverAnimation.reverse());
+		TweenMax.staggerTo('.work-thumb', 1, {opacity: 0,});
+		TweenMax.set("li.case-title", {});
+		TweenLite.set(".work-thumb", {transformStyle:"preserve-3d"});
+	
+		$("li.case-title").hover(over,out);
+		$(".seleted-works").hover(outAll);
+		$("li.case-title").mouseout(outAll);
+
+		function over(){
+			TweenMax.to(".work-thumb", 0.3, { opacity: 0,transformPerspective:500, y:0,  overwrite:"all"})
+			TweenMax.to($(this).find(".work-thumb"), 0.3, { opacity: 1, delay:0.3, transformPerspective:500, y:50})
+		}
+		
+		function out(){
+			TweenMax.to($(this).find(".work-thumb"), 0.3, { opacity: 0,transformPerspective:500, y:0,  overwrite:"all"})
+
+		}
+		function outAll(){
+			TweenMax.to(".work-thumb", 0.3, { opacity: 0,transformPerspective:500, y:0,  overwrite:"all"})
+
+		}
+    }
+}
+
+window.onload = function() {
+	// var timeline = new TimelineMax();
+	// timeline.to(".main-title",0.9,{ease:Power1.easeIn, opacity:1, scale:1});
+}
+
+
+/*----------------------------------------------------*/
+/* Marquee
+/*----------------------------------------------------*/
+gsap.to(".marquee p.one", {
+    scrollTrigger: {
+		trigger: "body",
+		scrub: 0.25,
+		start: "top bottom",
+		end: "bottom top",
+		ease: "power2"
+	  },
+	  xPercent: -50,
+	  x: 500
+  });
+
+
+/*----------------------------------------------------*/
+/* instagram feed
+/*----------------------------------------------------*/
+
+
+  var feed = new Instafeed({
+	//success: function(data) {
+	//  console.log('success', data);
+	//},
+	//after: function() {
+	//  console.log('finished!');
+	//},
+	//error: function(error) {
+	//  console.error('instafeed error', error);
+	//},
+	accessToken: 'IGQVJXc1pLVnIxcnVHd3ZA1THc5M2tRTzBkcWIxVEE3U0d6NmVkbEVwZAkxWNTVnYTE2YnNCQ0x6NDVQcGtuRzFTd2ZAjVndUd0ZANRmM5aHlzek51VjM1YnhMSHBHRHNaMFZAIWmZA5ekdn',
+	//debug: true,
+//       filter: function(image) {
+//         return true;
+//       },
+//       template: 'value: {{test}}',
+//       transform: function(image) {
+//         return {
+//           test: true
+//         };
+//       }
+	// Maximum number of Images to add. Max of 60.
+	limit: 5,
+	// Custom rendering template
+	template: '<div><a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a></div>',
+templateBoundaries: ['{{','}}']
+  });
+
+  feed.run();
+  //setTimeout(function() {
+  //  feed.run();
+  //}, 3000);
 

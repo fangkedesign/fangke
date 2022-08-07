@@ -4,8 +4,6 @@
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 4rem;
-	transform: scale(1.5);
-	opacity: 0;
 	svg {
 		width: 100%;
 	}
@@ -185,11 +183,12 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	li {
-		z-index: 0;
+		z-index: 1;
+		line-height: 2;
+		cursor: pointer;
 		position: relative;
 		list-style: none;
 		display: inline-block;
-		margin-bottom: 3%;
 		padding: 0 5%;
 		font-size: 3.5vw;
 		font-family: 'BeatriceDisplay-LightIt';
@@ -204,6 +203,7 @@
 		}
 		@include media-breakpoint-down(sm) {
 			font-size: 1.4rem;
+			margin-bottom: 2rem;
 			.year {
 				position: relative;
 			}
@@ -229,14 +229,22 @@
 
 }
 
+.btn-view-more {
+	font-size: 1.4rem;
+	margin-top: 4rem;
+	a {
+		padding: 20px 40px;
+    	border: 1px solid #000;
+	}
+}
 .work-thumb {
 	position: fixed;
+	opacity: 0;
 	z-index: -1;
 	top: 10vh;
 	left: 30vw;
 	width: 40vw;
 	max-height: 50vh;
-	visibility: hidden;
 	display: flex;
 	justify-content: center;
 	align-self: center;
@@ -247,7 +255,6 @@
 		max-width: 100%;    
 		align-self: center;
 		flex: 0 0 auto;
-		opacity: 0;
 		transition: all ease-in .4s;
 	}
 	@include media-breakpoint-down(sm) {
@@ -271,13 +278,7 @@
 .case-title:hover {
 	z-index: 1;
 	cursor: pointer;
-	.work-thumb {
-		visibility: visible;
-		video, img {
-			opacity: 1;
-		}
 
- 	}
 }
 
 
@@ -308,3 +309,46 @@
     .js_fade-in.js_slow {transition: all 1000ms;}
     .js_fade-in.js_fast {transition: all 1000ms;}
 }
+
+
+.marquee {
+	position: fixed;
+	p {
+		font-size: 10vh;
+		width: auto;
+		display: inline-block;
+		white-space: nowrap;
+	}
+}
+
+/*----------------------------------------------------*/
+/* instagram feed
+/*----------------------------------------------------*/
+
+#instafeed {
+  
+    flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+  }
+  
+  #instafeed div {
+   width: calc(100%/5);
+   @include media-breakpoint-down(sm) {
+	width: 50%;
+	}
+  }
+  #instafeed div a {
+  /*     display: inline-block; */
+	  
+  /*     max-height: 150px; */
+  /*     vertical-align: middle; */
+	position: relative;
+	padding-top: 75%;
+  }
+  #instafeed div a img {
+	object-fit: cover;
+	width: 100%;
+	position: relative;
+	aspect-ratio: 4/4;
+  }

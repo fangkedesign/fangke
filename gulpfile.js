@@ -47,6 +47,17 @@ gulp.task('concat-js', function() {
         .pipe(gulp.dest('design/static/js'))
 });
 
+//組合所有 pages js
+gulp.task('concat-main-js', function() {
+	return gulp.src([
+		'design/static/js/main/page/**/*.js'])
+		// .pipe(sourcemaps.init())
+		.pipe(plumber())                    // 使用 gulp-plumber 處理例外
+		.pipe(concat('main.js'))
+		// .pipe(sourcemaps.write())
+		.pipe(gulp.dest('design/static/js'));
+});
+
 //壓縮JS
 gulp.task('uglify-js', function () {
     return gulp.src('design/static/js/*.js')       
@@ -61,10 +72,10 @@ gulp.task('uglify-js', function () {
 //更新監視
 gulp.task('watch',function(){
     livereload.listen();
-    gulp.watch('design/static/mian/**/*.js', ['concat-js, uglify-js']);  //檔案有異動重新執行concat-js
     gulp.watch('design/static/vendor/**/*.js', ['concat-js, uglify-js']);  //檔案有異動重新執行concat-js
+    gulp.watch('design/static/js/main/page/**/*.js', ['concat-main-js']);  //檔案有異動重新執行concat-main-js
     gulp.watch('design/static/scss/**/*.scss',['compass']);    //檔案有異動重新執行compass
 });
 
 
-gulp.task('default',['compass', 'concat-js' ,'uglify-js','watch']);
+gulp.task('default',['compass', 'concat-main-js', 'concat-js' ,'uglify-js','watch']);

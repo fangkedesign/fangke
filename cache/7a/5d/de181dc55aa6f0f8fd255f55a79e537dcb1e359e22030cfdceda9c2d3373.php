@@ -23,7 +23,13 @@ class __TwigTemplate_7a5dde181dc55aa6f0f8fd255f55a79e537dcb1e359e22030cfdceda9c2
 \t\t\t\t<a href=\"info.html\">Info</a>
 \t\t</div> -->
 \t\t<div class=\"contact-info\">
-\t\t\t\t<a href=\"portfolio.html\">Works</a>
+\t\t\t<div class=\"link\">
+\t\t\t\t<a href=\"info.html\">Info</a>
+
+\t\t\t</div>
+\t\t</div>
+\t\t<div class=\"contact-info\">
+\t\t\t\t<a href=\"portfolio_list.html\">Works</a>
 \t\t</div>
 \t\t<div class=\"contact-info\">
 \t\t\t<div class=\"link\">
@@ -35,7 +41,11 @@ class __TwigTemplate_7a5dde181dc55aa6f0f8fd255f55a79e537dcb1e359e22030cfdceda9c2
 \t</div>
 
 
-</header>";
+</header>
+
+<!-- cursor -->
+<div class=\"cursor-dot-outline\"></div>
+<div class=\"cursor-dot\"></div>";
     }
 
     public function getTemplateName()
@@ -45,6 +55,6 @@ class __TwigTemplate_7a5dde181dc55aa6f0f8fd255f55a79e537dcb1e359e22030cfdceda9c2
 
     public function getDebugInfo()
     {
-        return array (  19 => 1,  140 => 55,  137 => 54,  131 => 41,  126 => 9,  121 => 8,  115 => 7,  105 => 59,  103 => 54,  93 => 46,  91 => 45,  88 => 44,  86 => 43,  83 => 42,  81 => 41,  77 => 39,  75 => 38,  70 => 35,  68 => 34,  40 => 9,  36 => 8,  32 => 7,  24 => 1,);
+        return array (  19 => 1,  150 => 61,  147 => 60,  141 => 42,  136 => 9,  131 => 8,  125 => 7,  111 => 65,  109 => 60,  94 => 47,  92 => 46,  89 => 45,  87 => 44,  84 => 43,  82 => 42,  78 => 40,  76 => 39,  71 => 36,  69 => 35,  40 => 9,  36 => 8,  32 => 7,  24 => 1,);
     }
 }

@@ -47,18 +47,17 @@ class __TwigTemplate_d2cf04117561888d7ff51b54d53d96775d94242f4bbe4a482bf3bd78ff6
 \t<!-- Form -->
 \t<!-- Core -->
 \t<link rel=\"stylesheet\" href=\"static/svg/icomoon/style.css\">
-\t<link rel=\"stylesheet\" href=\"static/css/bootstrap.css\">
+\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
 \t<link rel=\"stylesheet\" href=\"static/css/style.css\">
 \t
 \t<!-- Core -->
-\t
 \t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js\" integrity=\"sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh\" crossorigin=\"anonymous\"></script>
 \t<script src=\"static/js/jquery.min.js\"></script>
 \t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js\"></script>
-\t<script src=\"static/js/bootstrap/bootstrap.min.js\"></script>
-
 \t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js\"></script>
-\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js\"></script>
+
+\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js\"></script>
+\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js\"></script>
 \t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/zingtouch/1.0.6/zingtouch.min.js\"></script>
 \t<script src=\"http://afarkas.github.io/lazysizes/lazysizes.min.js\"></script>
 \t
@@ -66,51 +65,55 @@ class __TwigTemplate_d2cf04117561888d7ff51b54d53d96775d94242f4bbe4a482bf3bd78ff6
 
 <body>
 \t";
-        // line 36
+        // line 35
         $this->env->loadTemplate("static/svg/icomoon/symbol-defs.svg")->display($context);
-        // line 37
+        // line 36
         echo "\t
 \t<div class=\"loader\" ></div>
 \t<div class=\"site-cavas scroll-container\">
 \t\t";
-        // line 40
+        // line 39
         $this->env->loadTemplate("_header.html")->display($context);
-        // line 41
+        // line 40
         echo "
 \t\t<main>
 \t\t\t";
-        // line 43
+        // line 42
         $this->displayBlock('body', $context, $blocks);
-        // line 44
+        // line 43
         echo "\t\t</main>\t 
 \t\t";
-        // line 45
+        // line 44
         $this->env->loadTemplate("_footer.html")->display($context);
-        // line 46
+        // line 45
         echo "
 \t\t";
-        // line 47
+        // line 46
         $this->env->loadTemplate("_mobile_menu.html")->display($context);
-        // line 48
+        // line 47
         echo "\t</div>
-
-
 \t    
 \t<!-- Jquery Plugins  -->
-\t<script src=\"static/js/vendor.min.js\"></script>
+
+\t<!-- <script src=\"https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js\"></script> -->
+\t<script src=\"static/js/vendor.js\"></script>
 \t<script src=\"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js\"></script>
+\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js\"></script>
+\t<script src=\"https://www.cssscript.com/demo/add-instagram-photos-to-your-website-using-instafeed-js/src/instafeed.js\"></script>
 \t<!-- Customized Script -->
 \t<script src=\"static/js/main.js\"></script>
+
+\t
 \t\t";
-        // line 57
+        // line 60
         $this->displayBlock('pageScript', $context, $blocks);
-        // line 62
+        // line 65
         echo "\t\t<script>
 
 \t\tvar lazyLoadInstance = new LazyLoad({
 \t\t\t// Your custom settings go here
 \t\t});
-
+\t\t\$('.tilt').tilt();
 \t\t</script>
 </body>
 
@@ -134,16 +137,16 @@ class __TwigTemplate_d2cf04117561888d7ff51b54d53d96775d94242f4bbe4a482bf3bd78ff6
     {
     }
 
-    // line 43
+    // line 42
     public function block_body($context, array $blocks = array())
     {
         echo " ";
     }
 
-    // line 57
+    // line 60
     public function block_pageScript($context, array $blocks = array())
     {
-        // line 58
+        // line 61
         echo "
 
 \t
@@ -162,6 +165,6 @@ class __TwigTemplate_d2cf04117561888d7ff51b54d53d96775d94242f4bbe4a482bf3bd78ff6
 
     public function getDebugInfo()
     {
-        return array (  147 => 58,  144 => 57,  138 => 43,  133 => 9,  128 => 8,  122 => 7,  108 => 62,  106 => 57,  95 => 48,  93 => 47,  90 => 46,  88 => 45,  85 => 44,  83 => 43,  79 => 41,  77 => 40,  72 => 37,  70 => 36,  40 => 9,  36 => 8,  32 => 7,  24 => 1,);
+        return array (  150 => 61,  147 => 60,  141 => 42,  136 => 9,  131 => 8,  125 => 7,  111 => 65,  109 => 60,  94 => 47,  92 => 46,  89 => 45,  87 => 44,  84 => 43,  82 => 42,  78 => 40,  76 => 39,  71 => 36,  69 => 35,  40 => 9,  36 => 8,  32 => 7,  24 => 1,);
     }
 }

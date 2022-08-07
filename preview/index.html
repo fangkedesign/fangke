@@ -15,18 +15,17 @@
 	<!-- Form -->
 	<!-- Core -->
 	<link rel="stylesheet" href="static/svg/icomoon/style.css">
-	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="static/css/style.css">
 	
 	<!-- Core -->
-	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="static/js/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-	<script src="static/js/bootstrap/bootstrap.min.js"></script>
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/zingtouch/1.0.6/zingtouch.min.js"></script>
 	<script src="http://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
 	
@@ -126,7 +125,13 @@
 				<a href="info.html">Info</a>
 		</div> -->
 		<div class="contact-info">
-				<a href="portfolio.html">Works</a>
+			<div class="link">
+				<a href="info.html">Info</a>
+
+			</div>
+		</div>
+		<div class="contact-info">
+				<a href="portfolio_list.html">Works</a>
 		</div>
 		<div class="contact-info">
 			<div class="link">
@@ -139,14 +144,26 @@
 
 
 </header>
+
+<!-- cursor -->
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
 		<main>
-			<div class="main-title">
+			
+
+<!-- cursor -->
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+<div class="main-title">
 	<a href="index.html"><img src="static/images/logo.svg" alt=""></a>
 </div>
 
 <!-- <div class="fangke-cht-text">
 	芳<br>格
 </div> -->
+<div class="marquee">
+	<p class="one"> </p>
+</div>
 <div class="index-visual">
 	<div class="intro-text">
 		<p>
@@ -155,33 +172,19 @@
 
 		</p>
 	</div>
-	
-		
 </div>
 
 
-<div class="index-about-text js_fade-in">
-	<p>	我是芳格Kate，在台北地區專職網頁/UI設計、及網頁前端切版的撰寫，過去四年任職為前端設計師，主要參與服飾電商網站、形象網站、APP UI等設計，
-		不只是在產出視覺設計、也擁有編程基礎的前端設計技能，能夠為您指導網站風格。
-		<br><br><br>
-		喜歡新穎創新的風格，目前提供以下服務：(⁎⁍̴̛ᴗ⁍̴̛⁎)<br>
-    /// 網頁設計<br>
-    /// App UI設計<br>
-    /// Shopline電商改造設計
-	</p>
-</div>
+
 <div class="seleted-works js_fade-in">
 	<ul class="seleted-works-list">
 		<li class="case-title">
 			<div class="work-thumb">
-				<video class="lazy" id="promoVideo" autoplay loop muted playsinline onclick="pauseVid()">
-					<!-- <source src="video.webm" type="video/webm"> -->
-					<source data-src="static/images/seleted_works/golddigger.mp4" type="video/mp4">
-					<!-- <img src="animated.gif"> -->
-				</video>
+
+				<img  class="lazy"   data-src="static/images/seleted_works/nagata.jpg" alt="">
 			</div>
-			Golddigger
-			<span class="year">2019</span>
+			Nagata Lab
+			<span class="year">2021</span>
 			<div class="doodle" style="bottom: 20%;right: -40%;" >
 				<img  src="static/images/doddle_01.svg" alt="">
 			</div>
@@ -191,7 +194,7 @@
 			<div class="work-thumb">
 				<img  class="lazy"   data-src="static/images/seleted_works/flowapartment.jpg" alt="">
 			</div>
-			Flowapartment
+			Flow Apartment
 			<span class="year">2018</span>
 		</li>
 		<li class="case-title">
@@ -209,6 +212,7 @@
 		<li class="line-deco"></li>
 		<li class="case-title">
 			<div class="work-thumb">
+				<img class="lazy"   src="https://cdn.dribbble.com/users/1015720/screenshots/5542890/media/444239d6acfda5553c9476a1ba1d256b.gif" alt="">
 			</div>
 			Osparks
 			<span class="year">2017-2018</span>
@@ -220,7 +224,7 @@
 					alt="">
 			</div>
 			GaryTu
-			<span class="year">2015</span>
+			<span class="year">2018</span>
 			<div class="doodle" style="bottom: 25%;right: -36%;" >
 				<img  class="lazy"   data-src="static/images/doddle_02.svg" alt="">
 			</div>
@@ -230,18 +234,21 @@
 				<img  class="lazy"   data-src="static/images/seleted_works/hannahjewelry.jpg" alt="">
 			</div>
 			Hannah Jewelry
-			<span class="year">2017</span>
+			<span class="year">2018</span>
 		</li>
 		<li class="line-deco"></li>
 		<li class="case-title">
 			<div class="work-thumb">
+				<img class="lazy"   src="https://cdn.dribbble.com/users/1015720/screenshots/14132485/media/13206ab8332d3e02d7af9a4e581ad005.jpg?compress=1&resize=1600x1200" alt="">
 			</div>
-			Dresscode
-			<span class="year">2017</span>
+			City Smart UI
+			<span class="year">2018</span>
 			<div class="doodle" style="bottom: -16%;right: 28%;" >
 				<img  class="lazy"   data-src="static/images/doddle_03.svg" alt="">
 			</div>
 		</li>
+
+		<div class="btn-view-more d-flex justify-content-center w-100"><a href="portfolio_list.html">View More</a></div>
 	</ul>
 
 </div>
@@ -263,76 +270,6 @@
 
 
 
-<!-- cursor -->
-<div class="cursor-dot-outline"></div>
-<div class="cursor-dot"></div>
-
-<!-- <ul class="seleted-works-list">
-	<li>
-		<img src="static/images/works/mongo.png" alt="">
-		<div class="works-des">
-			<span>Mongo</span>
-			<p class="des">
-				Pet’s cleaning supplies ecommerce site, the goal in this project was to elevate the brand visual and
-				comp up with a
-				easy naviate shopping interface. My role was visual design and front end development.
-			</p>
-		</div>
-	</li>
-	<li>
-		<img src="static/images/works/mongo.png" alt="">
-		<div class="works-des">
-			<span>Hannah Jewelry</span>
-			<p class="des">
-				Designer’s jewelry collectoin ecommerce shop, the goal is to intergate client’s product store with her
-				fashion
-				blog, my role is deliver a visual match with branding and front-end develping.
-			</p>
-		</div>
-	</li>
-</ul> -->
-
-<!-- <div class="more-works-container">
-	<h1 class="title">More Works</h1>
-	<ul class="more-works-list">
-		<li class="project-item">
-			<span class="text-wrap"> <span class="project-name">2young Clinic</span>
-				Cosmetic Sugery Clinic</span>
-			<div class="hover-image">
-				<img src="static/images/works/project_cover_xinan.png" alt="">
-			</div>
-
-		</li>
-		<li class="project-item"><span class="text-wrap">
-				<span class="project-name">HandyAge</span>
-				Coporate Catalogue sites</span>
-			<div class="hover-image">
-				<img src="static/images/works/project_cover_handyage.png" alt="">
-			</div>
-		</li>
-		<li class="project-item"><span class="text-wrap">
-				<span class="project-name">Dresscode</span>
-				Clothing brand online ecommerce</span>
-			<div class="hover-image">
-				<img src="static/images/works/project_cover_drsscode.png" alt="">
-			</div>
-		</li>
-		<li class="project-item"><span class="text-wrap">
-				<span class="project-name">TeamLuck</span>
-				VR Company Coporate site</span>
-			<div class="hover-image">
-				<img src="static/images/works/project_cover_teamluck.jpg" alt="">
-			</div>
-		</li>
-		<li class="project-item"><span class="text-wrap">
-				<span class="project-name">Osparks</span>
-				digital platform startup interface collebrate</span>
-			<div class="hover-image">
-				<img src="static/images/works/project_cover_osparks.jpg" alt="">
-			</div>
-		</li>
-	</ul>
-</div> -->
 
 <script>
 
@@ -342,6 +279,24 @@
 <div class="sunflower js_fade-in">
 	<img src="static/images/sunflower.svg" alt="">
 </div>
+
+
+<footer class="in-view js_fade-in" data-background="#f56b4a">
+  
+	<div class="footer-container flex-column flex-md-row">
+		<div class="footer-icon col-12 col-md-4 justify-content-center mb-3">
+			<img src="static/images/footer_icon.png" alt="">
+		</div>
+
+    <div class="col-12 col-md d-flex flex-column justify-content-center">
+      <h1 class="title">
+        Let's Make It Interesting 
+      </h1>
+      <a class="email" href="mailto:hsiehfangke@gmail.com">hsiehfangke@gmail.com</a>
+    </div>
+	</div>
+</footer>
+
 
 <!-- <div class="tickerwrapper">
    <ul class='list'>
@@ -358,29 +313,19 @@
       </li>
   </ul>
 </div> -->
-
-<footer class="in-view js_fade-in" data-background="#f56b4a">
-	<div class="footer-container">
-		<div class="footer-icon">
-			<img src="static/images/footer_icon.png" alt="">
-		</div>
-		<div>
-			<h1 class="title">
-				Let's Make It Interesting 
-			</h1>
-			<a href="mailto:hsiehfangke@gmail.com">hsiehfangke@gmail.com</a>
-		</div>
-	</div>
-</footer>
 			</div>
-
-
 	    
 	<!-- Jquery Plugins  -->
-	<script src="static/js/vendor.min.js"></script>
+
+	<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+	<script src="static/js/vendor.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"></script>
+	<script src="https://www.cssscript.com/demo/add-instagram-photos-to-your-website-using-instafeed-js/src/instafeed.js"></script>
 	<!-- Customized Script -->
 	<script src="static/js/main.js"></script>
+
+	
 		
 
 	
@@ -389,7 +334,7 @@
 		var lazyLoadInstance = new LazyLoad({
 			// Your custom settings go here
 		});
-
+		$('.tilt').tilt();
 		</script>
 </body>
 

@@ -1,0 +1,92 @@
+.main-content-wrap {
+	
+    margin-top: 8rem;
+	@include media-breakpoint-down(sm) {
+		margin-top: 0rem;
+		padding: 0 15px;
+	}
+}
+
+.back-to-home {
+    width: 100%;
+	padding: 20px 50px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+	.arrow-back {
+		max-width: 50px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding-left: 15px;
+	}
+}
+/* --------------------------------
+Portfolio  List
+-------------------------------- */
+.portfolio-list {
+	list-style: none;
+	margin: 0;
+    padding: 0;
+	li {
+		margin-bottom: 1rem;
+	}
+	.title {
+		padding-top: 4rem;
+		font-size: 2rem;
+		border-bottom: 1px solid #000;
+	}
+	video, img {
+		margin: 0 auto;
+		width: auto;
+		max-width: 100%;    
+		align-self: center;
+		flex: 0 0 auto;
+		transition: all ease-in .4s;
+	}
+}
+/* --------------------------------
+  Portfolio Detail
+-------------------------------- */
+.portfolio-main-header {
+	.title {
+		font-size: 10rem;
+		@include media-breakpoint-down(sm) {
+			font-size:3rem;
+		}
+	}
+}
+.portfolio-main-img {
+	background-position: 50% 50%;
+	background-size: cover;
+	height: 760px;
+	@include media-breakpoint-down(sm) {
+		height: 420px;
+	}
+}
+.portfolio-main-brief {
+	padding: 8rem 0;
+	border-bottom: 1px solid #000;
+    font-size: .9rem;
+	@include media-breakpoint-down(sm) {
+		padding: 3rem 0;
+	}
+}
+.portfolio-images {
+	border-left: 1px solid #000;
+
+	@include media-breakpoint-down(sm) {
+		border-left: 0px;
+	}
+}
+.portfolio-full-block {
+    padding: 4rem 0;
+    border-bottom: 1px solid #000;
+}
+
+.more-project {
+
+    padding: 4rem 0;
+    border-bottom: 1px solid #000;
+}
+
+
+

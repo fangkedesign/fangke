@@ -31,27 +31,33 @@ footer {
     line-height: .3;
     display: flex;        
     font-family: 'BeatriceDisplay-LightIt';
-
     .footer-icon {
+        text-align: right;
         margin-right: 40px;
-        width: 40%;
-        max-width: 300px;
         img {
             width: 100%;
+            max-width: 180px;
         }
     }
     .title {
-        line-height: 1;
-        margin-top: 0;
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
     }
-    a {
+    a.email {
         color: #fff;
+        font-size: 2rem;
     }
     @include media-breakpoint-down(md) {
-        margin: 10vh auto;
-        h3 {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
+        margin: 10vh 0;
+        width: 100%;
+        .footer-icon {
+            text-align: center;
+        }
+        .title {
+            font-size: 1.4rem;
+        }
+        a.email {
+            font-size: 1.4rem;
         }
     }
 }
