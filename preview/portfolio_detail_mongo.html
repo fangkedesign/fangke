@@ -161,7 +161,7 @@
 		<h1 class="title">Mongo</h1>
 	</div>
 
-	<div class="portfolio-main-img" style="background-image: url('static/images/works/mongo_main.jpg');">
+	<div class="portfolio-main-img lazy" style="background-image: url('static/images/works/mongo_main.jpg');">
 	</div>
 
 
@@ -214,7 +214,7 @@
 
 		</section>
 		<div class="portfolio-images col-12 col-md-6" >				
-			<img class="img-fluid" src="static/images/works/mongo_01.jpg" alt="">
+			<img class="img-fluid lazy" src="static/images/works/mongo_01.jpg" alt="">
 
 		</div>
 	</div>
@@ -237,9 +237,9 @@
 
 		</section>
 		<div class="portfolio-images col-12 col-md-6" >				
-			<img class="img-fluid" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/e4182c71529705.5bc854be766f7.jpg" alt="">
-			<img class="img-fluid" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5b6f8871529705.5bc854be77815.jpg" alt="">
-			<img class="img-fluid" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1bd94871529705.5bc854be75c8b.jpg" alt="">
+			<img class="img-fluid lazy" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/e4182c71529705.5bc854be766f7.jpg" alt="">
+			<img class="img-fluid lazy" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5b6f8871529705.5bc854be77815.jpg" alt="">
+			<img class="img-fluid lazy" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1bd94871529705.5bc854be75c8b.jpg" alt="">
 		</div>
 	</div>
 	<!-- sticky Content end -->
@@ -255,16 +255,16 @@
 				</div>
 				<div class="row">
 					<div class="col-6 col-md-3  mb-4">
-						<img class="img-fluid" src="static/images/works/mongo_02.jpg" alt="">
+						<img class="img-fluid lazy" src="static/images/works/mongo_02.jpg" alt="">
 					</div>
 					<div class="col-6 col-md-3  mb-4">
-						<img class="img-fluid" src="static/images/works/mongo_03.jpg" alt="">
+						<img class="img-fluid lazy" src="static/images/works/mongo_03.jpg" alt="">
 					</div>
 					<div class="col-6 col-md-3  mb-4">
-						<img class="img-fluid" src="static/images/works/mongo_04.jpg" alt="">
+						<img class="img-fluid lazy" src="static/images/works/mongo_04.jpg" alt="">
 					</div>
 					<div class="col-6 col-md-3  mb-4">
-						<img class="img-fluid" src="static/images/works/mongo_05.jpg" alt="">
+						<img class="img-fluid lazy" src="static/images/works/mongo_05.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -343,7 +343,9 @@
 
 	<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
 	<script src="static/js/vendor.js"></script>
+	
 	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"></script>
 	<script src="https://www.cssscript.com/demo/add-instagram-photos-to-your-website-using-instafeed-js/src/instafeed.js"></script>
 	<!-- Customized Script -->
@@ -354,10 +356,10 @@
 
 	
 				<script>
-
-		var lazyLoadInstance = new LazyLoad({
+			var lazyLoadInstance = new LazyLoad({
 			// Your custom settings go here
-		});
+			});
+
 		$('.tilt').tilt();
 		</script>
 </body>

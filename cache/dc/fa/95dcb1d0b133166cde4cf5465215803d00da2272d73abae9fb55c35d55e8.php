@@ -91,7 +91,12 @@ class __TwigTemplate_dcfa95dcb1d0b133166cde4cf5465215803d00da2272d73abae9fb55c35
 \t\t<li class=\"line-deco\"></li>
 \t\t<li class=\"case-title\">
 \t\t\t<div class=\"work-thumb\">
-\t\t\t\t<img class=\"lazy\"   src=\"https://cdn.dribbble.com/users/1015720/screenshots/5542890/media/444239d6acfda5553c9476a1ba1d256b.gif\" alt=\"\">
+\t\t\t\t<video class=\"lazy\" id=\"promoVideo\" autoplay loop muted playsinline onclick=\"pauseVid()\">
+\t\t\t\t\t<!-- <source src=\"video.webm\" type=\"video/webm\"> -->
+\t\t\t\t\t<source data-src=\"static/images/seleted_works/osparks.mp4\" type=\"video/mp4\">
+\t\t\t\t\t<!-- <img src=\"animated.gif\"> -->
+\t\t\t\t</video>
+
 \t\t\t</div>
 \t\t\tOsparks
 \t\t\t<span class=\"year\">2017-2018</span>
@@ -118,7 +123,7 @@ class __TwigTemplate_dcfa95dcb1d0b133166cde4cf5465215803d00da2272d73abae9fb55c35
 \t\t<li class=\"line-deco\"></li>
 \t\t<li class=\"case-title\">
 \t\t\t<div class=\"work-thumb\">
-\t\t\t\t<img class=\"lazy\"   src=\"https://cdn.dribbble.com/users/1015720/screenshots/14132485/media/13206ab8332d3e02d7af9a4e581ad005.jpg?compress=1&resize=1600x1200\" alt=\"\">
+\t\t\t\t<img class=\"lazy\"   src=\"https://cdn.dribbble.com/users/1015720/screenshots/14132485/media/13206ab8332d3e02d7af9a4e581ad005.jpg\" alt=\"\">
 \t\t\t</div>
 \t\t\tCity Smart UI
 \t\t\t<span class=\"year\">2018</span>

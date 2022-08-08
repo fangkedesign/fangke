@@ -97,7 +97,9 @@ class __TwigTemplate_d2cf04117561888d7ff51b54d53d96775d94242f4bbe4a482bf3bd78ff6
 
 \t<!-- <script src=\"https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js\"></script> -->
 \t<script src=\"static/js/vendor.js\"></script>
+\t
 \t<script src=\"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js\"></script>
+
 \t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js\"></script>
 \t<script src=\"https://www.cssscript.com/demo/add-instagram-photos-to-your-website-using-instafeed-js/src/instafeed.js\"></script>
 \t<!-- Customized Script -->
@@ -105,14 +107,14 @@ class __TwigTemplate_d2cf04117561888d7ff51b54d53d96775d94242f4bbe4a482bf3bd78ff6
 
 \t
 \t\t";
-        // line 60
+        // line 62
         $this->displayBlock('pageScript', $context, $blocks);
-        // line 65
+        // line 67
         echo "\t\t<script>
-
-\t\tvar lazyLoadInstance = new LazyLoad({
+\t\t\tvar lazyLoadInstance = new LazyLoad({
 \t\t\t// Your custom settings go here
-\t\t});
+\t\t\t});
+
 \t\t\$('.tilt').tilt();
 \t\t</script>
 </body>
@@ -143,10 +145,10 @@ class __TwigTemplate_d2cf04117561888d7ff51b54d53d96775d94242f4bbe4a482bf3bd78ff6
         echo " ";
     }
 
-    // line 60
+    // line 62
     public function block_pageScript($context, array $blocks = array())
     {
-        // line 61
+        // line 63
         echo "
 
 \t
@@ -165,6 +167,6 @@ class __TwigTemplate_d2cf04117561888d7ff51b54d53d96775d94242f4bbe4a482bf3bd78ff6
 
     public function getDebugInfo()
     {
-        return array (  150 => 61,  147 => 60,  141 => 42,  136 => 9,  131 => 8,  125 => 7,  111 => 65,  109 => 60,  94 => 47,  92 => 46,  89 => 45,  87 => 44,  84 => 43,  82 => 42,  78 => 40,  76 => 39,  71 => 36,  69 => 35,  40 => 9,  36 => 8,  32 => 7,  24 => 1,);
+        return array (  152 => 63,  149 => 62,  143 => 42,  138 => 9,  133 => 8,  127 => 7,  113 => 67,  111 => 62,  94 => 47,  92 => 46,  89 => 45,  87 => 44,  84 => 43,  82 => 42,  78 => 40,  76 => 39,  71 => 36,  69 => 35,  40 => 9,  36 => 8,  32 => 7,  24 => 1,);
     }
 }
