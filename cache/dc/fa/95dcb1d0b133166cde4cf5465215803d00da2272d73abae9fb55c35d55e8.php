@@ -46,8 +46,8 @@ class __TwigTemplate_dcfa95dcb1d0b133166cde4cf5465215803d00da2272d73abae9fb55c35
 <div class=\"index-visual\">
 \t<div class=\"intro-text\">
 \t\t<p>
-\t\t\tI'm a UI web designer who has  <span>strongfrontend knowledge</span>
- \t\t\tand combines a <span>logical thinking</span> approach with a <span>detailed aesthetic.</span>
+\t\t\tI'm a UI web designer with <span>solid frontend knowledge</span>
+ \t\t\tand combine a <span>logical thinking</span> approach with a <span>aesthetic-pleasing design.</span>
 
 \t\t</p>
 \t</div>

@@ -44,27 +44,36 @@ class __TwigTemplate_31f659058b95b9378cc34008ccdf3fad07b70267387b57a9e5e6dcb48e9
 \t\t<div class=\"info-text col-md-6 col-12\">
 \t\t\t<h2>
 \t\t\t\t<br><br>
-\t\t\t\tI'm a UI web designer who has strong frontend knowledge
-\t\t\t\tand combines a logical thinking approach with a detailed aesthetic.</h2>
+\t\t\t\tI’m a designer with a background in <span>Communication Arts</span>. My experience worked across <span>website and app UI</span>, finding creative solutions for user interfaces and experiences. 
 
 \t\t\t<img class=\"white-oval\" src=\"static/images/info/oval.svg\" alt=\"\">
 \t\t</div>
 \t</div>
 \t<div class=\"row info-trivia\">
+\t\t<p>I’m a designer with a background in Communication Arts. My experience worked across website and app UI, finding creative solutions for user interfaces and experiences. </p>
+
+\t\t\t<p>Equipped with a diverse skill-set, my expertise is in designing, conceptualizing and building engaging user experiences with functional and aesthetic-pleasing interfaces. </p>
+\t\t\t
+\t\t<p>I come up with ideas that resonate with your brand and its voice. look for fresh ideas that would add value to your website and your brand while keeping up-to-date with market trends.</p>
+\t\t\t
+\t\t<p>In the last few years, i’ve collaborated with clients from startups to enterprise-level companies to build customized user interfaces with innovative solution.
+\t\t\tI want to bring my experience in web development and my passion for finding creative solutions to help businesses excel and eventually assists in those businesses improving the quality of life and society.
+\t\t</p>
+\t\t<p>
+            Outside of my work, I like walking around new places taking film photos. Drawing and going to parks with my dear cat.🐱\t\t<br>
+\t\t\t<br>
+\t\t\t<br>
+\t\t</p>
+
+
 \t\t<h3>
 \t\t\tFreelancer <span>Dec 2018 - Present</span>
 \t\t</h3>
 \t\t<p>・Collaborated with oversea product manager and developer to build custom app and website.<br>
             ・Take part in multiple web UI design for local brand e-commerce.<br>
-\t\t\t・Lead frontend e-commerce online designer at MUJI Taiwan branch</p>
+\t\t\t・Lead frontend e-commerce online designer at MUJI Taiwan branch.</p>
 \t\t<br><br>
-\t\t<p>
-\t\t\tI want to bring my experience in web development and my passion for finding creative solutions to help businesses excel and eventually assists in those businesses improving the quality of life and society.
 
-\t\t</p>
-\t\t<p>
-            Besides design, I also like walking around new places taking film photos.
-\t\t</p>
 \t</div>
 </div>
 
