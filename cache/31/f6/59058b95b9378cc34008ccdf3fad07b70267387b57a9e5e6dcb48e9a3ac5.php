@@ -49,7 +49,7 @@ class __TwigTemplate_31f659058b95b9378cc34008ccdf3fad07b70267387b57a9e5e6dcb48e9
 \t\t\t<img class=\"white-oval\" src=\"static/images/info/oval.svg\" alt=\"\">
 \t\t</div>
 \t</div>
-\t<div class=\"row info-trivia\">
+\t<div class=\"row info-trivia js_fade-in \">
 \t\t<p>I’m a designer with a background in Communication Arts. My experience worked across website and app UI, finding creative solutions for user interfaces and experiences. </p>
 
 \t\t\t<p>Equipped with a diverse skill-set, my expertise is in designing, conceptualizing and building engaging user experiences with functional and aesthetic-pleasing interfaces. </p>
@@ -66,10 +66,10 @@ class __TwigTemplate_31f659058b95b9378cc34008ccdf3fad07b70267387b57a9e5e6dcb48e9
 \t\t</p>
 
 
-\t\t<h3>
+\t\t<h3 class=\"js_fade-in \">
 \t\t\tFreelancer <span>Dec 2018 - Present</span>
 \t\t</h3>
-\t\t<p>・Collaborated with oversea product manager and developer to build custom app and website.<br>
+\t\t<p class=\"js_fade-in \">・Collaborated with oversea product manager and developer to build custom app and website.<br>
             ・Take part in multiple web UI design for local brand e-commerce.<br>
 \t\t\t・Lead frontend e-commerce online designer at MUJI Taiwan branch.</p>
 \t\t<br><br>
